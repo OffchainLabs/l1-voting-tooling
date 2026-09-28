@@ -36,7 +36,7 @@ async function setup() {
   return { clients, deployment };
 }
 
-/** GovernorCountingSimple.VoteType values by index. */
+/** GovernorCountingSimple.VoteType values by index: https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/v4.7.3/contracts/governance/extensions/GovernorCountingSimpleUpgradeable.sol#L23-L27 */
 const SUPPORT = ["AGAINST", "FOR", "ABSTAIN"] as const;
 
 program
