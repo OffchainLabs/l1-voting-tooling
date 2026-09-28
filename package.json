@@ -1,0 +1,32 @@
+{
+  "name": "@offchainlabs/l1-voting-proving",
+  "version": "0.0.1",
+  "description": "Build and submit proofs for the L1 voting system",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "l1-voting-proving": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "cli": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "viem": "^2.56.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
